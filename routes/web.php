@@ -30,6 +30,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    // cathegory
+    Route::get('/processors', [DashboardController::class, 'processors'])->name('processors');
+    Route::get('/motherboards', [DashboardController::class, 'motherboards'])->name('motherboards');
+    Route::get('/graphic-cards', [DashboardController::class, 'graphicCards'])->name('graphic-cards');
+
+
+
 });
 
 // Business Registration
