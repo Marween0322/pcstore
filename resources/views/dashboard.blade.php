@@ -16,8 +16,9 @@
                     <a href="{{ route('processors') }}">
                         <div class="bg-white rounded-lg shadow p-4 text-center flex flex-col items-center justify-center h-60">
                             <div class="flex justify-center items-center h-full">
-                                <img src="{{ asset('storage/pictures/Processor-Category_720x.webp') }}" alt="Processor" class="max-w-full max-h-full object-contain">
+                                <img src="{{ asset('storage/pictures/processor.webp') }}" alt="Processor" class="max-w-full max-h-full object-contain">
                             </div>
+
                         </div>
                     </a>
                 </div>
@@ -25,7 +26,7 @@
                     <a href="{{ route('motherboards') }}">
                         <div class="bg-white rounded-lg shadow p-4 text-center flex flex-col items-center justify-center h-60">
                             <div class="flex justify-center items-center h-full">
-                                <img src="{{ asset('storage/pictures/Motherboard-Category_320x.webp') }}" alt="Motherboard" class="max-w-full max-h-full object-contain">
+                                <img src="{{ asset('storage/pictures/motherboard.png') }}" alt="Motherboard" class="max-w-full max-h-full object-contain">
                             </div>
                         </div>
                     </a>
@@ -34,7 +35,7 @@
                     <a href="{{ route('graphic-cards') }}">
                         <div class="bg-white rounded-lg shadow p-4 text-center flex flex-col items-center justify-center h-60">
                             <div class="flex justify-center items-center h-full">
-                                <img src="{{ asset('storage/pictures/GPU_320x.webp') }}" alt="Graphics Card" class="max-w-full max-h-full object-contain">
+                                <img src="{{ asset('storage/pictures/graphic.png') }}" alt="Graphics Card" class="max-w-full max-h-full object-contain">
                             </div>
                         </div>
                     </a>
@@ -52,7 +53,7 @@
                             <a href="#" class="text-blue-500">See more</a>
                         </div>
                         <div class="flex justify-center">
-                            <img src="{{ asset('storage/pictures/desktop.jpg') }}" alt="Desktops" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <img src="{{ asset('storage/pictures/desktop.webp') }}" alt="Desktops" class="w-full h-48 object-cover rounded-lg mb-4">
                         </div>
                         @foreach($products->where('category', 'desktop') as $product)
                             <div class="bg-white p-6 rounded-lg shadow-lg dark:bg-zinc-900 dark:ring-zinc-800 mb-4">
@@ -72,7 +73,7 @@
                             <a href="#" class="text-blue-500">See more</a>
                         </div>
                         <div class="flex justify-center">
-                            <img src="{{ asset('storage/pictures/laptop.jpg') }}" alt="Laptops" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <img src="{{ asset('storage/pictures/laptop.webp') }}" alt="Laptops" class="w-full h-48 object-cover rounded-lg mb-4">
                         </div>
                         @foreach($products->where('category', 'laptop') as $product)
                             <div class="bg-white p-6 rounded-lg shadow-lg dark:bg-zinc-900 dark:ring-zinc-800 mb-4">
@@ -102,7 +103,7 @@
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">TEAM ELITE</p>
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-through">₱3,652.00</p>
                                     <p class="mt-2 text-lg font-bold text-black dark:text-white">₱2,530.00</p>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating: 
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating:
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
@@ -122,7 +123,7 @@
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">KINGSTON</p>
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-through">₱2,050.00</p>
                                     <p class="mt-2 text-lg font-bold text-black dark:text-white">₱1,346.00</p>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating: 
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating:
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
@@ -142,7 +143,7 @@
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">TEAM ELITE</p>
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-through">₱1,749.00</p>
                                     <p class="mt-2 text-lg font-bold text-black dark:text-white">₱1,163.00</p>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating: 
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating:
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
@@ -162,7 +163,7 @@
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">GSKILL</p>
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-through">₱3,844.00</p>
                                     <p class="mt-2 text-lg font-bold text-black dark:text-white">₱2,478.00</p>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating: 
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating:
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
@@ -182,7 +183,7 @@
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">AMD</p>
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-through">₱8,195.00</p>
                                     <p class="mt-2 text-lg font-bold text-black dark:text-white">₱4,550.00</p>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating: 
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating:
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
@@ -202,7 +203,7 @@
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">TEAM ELITE</p>
                                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-through">₱1,687.00</p>
                                     <p class="mt-2 text-lg font-bold text-black dark:text-white">₱1,139.00</p>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating: 
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Rating:
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>
                                         <span class="text-yellow-500">★</span>

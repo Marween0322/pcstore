@@ -18,7 +18,16 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Authenticated routes
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
     Route::resource('products', ProductController::class);
+    Route::get('/processors', [DashboardController::class, 'processors'])->name('processors');
+    Route::get('/products/{id}', [DashboardController::class, 'show'])->name('products.show');
+
+    Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
+    Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+    Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+
+
     Route::resource('orders', OrderController::class);
     Route::resource('services', ServiceController::class);
 
@@ -35,6 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/processors', [DashboardController::class, 'processors'])->name('processors');
     Route::get('/motherboards', [DashboardController::class, 'motherboards'])->name('motherboards');
     Route::get('/graphic-cards', [DashboardController::class, 'graphicCards'])->name('graphic-cards');
+
 
 
 
